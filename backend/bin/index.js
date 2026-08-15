@@ -64,5 +64,5 @@ await writeSteeringFile(targetPath, payload)
 
 // ── 10.6 Conditionally start UI server ──────────────────────────────────────
 if (args.ui) {
-  await startUIServer(payload)
+  await startUIServer(payload, targetPath)
 }

@@ -1,7 +1,7 @@
 import { type ScanData, isScanData } from '../types/scan-data';
 import { MOCK_SCAN_DATA } from './mock-data';
 
-const USE_MOCK = true; // Toggle to false when backend is ready
+const USE_MOCK = false; // Toggle to true to use mock data instead of the backend
 
 export async function fetchScanData(): Promise<ScanData> {
   if (USE_MOCK) {

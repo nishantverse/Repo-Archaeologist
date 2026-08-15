@@ -29,8 +29,9 @@ export async function writeSteeringFile(targetPath, payload) {
 
 /**
  * Builds the full Markdown string from the analysis payload.
+ * Exported so other modules (e.g. uiServer) can include it in the API response.
  */
-function buildMarkdown(payload) {
+export function buildMarkdown(payload) {
   const { techDebt, deps, flow, humanSummary, constraints } = payload
   const { megaFiles, todos } = techDebt
   const { dead } = deps
