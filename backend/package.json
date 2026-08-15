@@ -1,0 +1,19 @@
+{
+  "name": "repo-archaeologist",
+  "version": "1.0.0",
+  "description": "Zero-config CLI tool that scans a repository and generates onboarding artifacts",
+  "type": "module",
+  "bin": {
+    "repo-archaeologist": "./bin/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "boxen": "^7.1.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "get-port": "^7.1.0",
+    "groq-sdk": "^0.7.0"
+  }
+}
