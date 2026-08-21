@@ -6,6 +6,7 @@ export const IGNORE_LIST = [
   '.next',
   'coverage',
   'vendor',
+  'venv'
 ]
 
 export const FALLBACK_FILES = [

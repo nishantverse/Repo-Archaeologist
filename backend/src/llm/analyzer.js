@@ -220,7 +220,7 @@ async function callGroq(userMsg) {
  */
 async function callOllama(userMsg) {
   const baseUrl = (process.env.OLLAMA_BASE_URL || 'http://localhost:11434').replace(/\/$/, '')
-  const model = process.env.OLLAMA_MODEL || 'llama3'
+  const model = process.env.OLLAMA_MODEL || 'llama3.2'
 
   const response = await fetch(`${baseUrl}/api/chat`, {
     method: 'POST',
